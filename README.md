@@ -2,6 +2,7 @@
 
 
 ### 1. 고양시 공공자전거 스테이션 최적 위치 선정 
+- 폴더명: Goyang_Public_Bicycle
 - 주최기간: [compas](https://compas.lh.or.kr/) 
 - 사용툴: Python, QGIS
 - 기간: 2020. 08. 20 ~ 2020. 09. 10
