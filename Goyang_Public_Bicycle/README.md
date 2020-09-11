@@ -1,4 +1,4 @@
-# goyangfifteen
+# Goyang_Public_Bicylce
 
 
 # 고양시 공공자전거 스테이션 최적 위치 선정
