@@ -97,5 +97,25 @@ def postagging_mecab(text):
   train_list, train_df = make_tokens(train)
   test_list, test_df = make_tokens(test)
   ```
+  ## 4. DL
+  ### 4.1. 단어인덱스 생성
+  ```python
+  tokenizer = Tokenizer()      
+  tokenizer.fit_on_texts(train_list)    
+  ```
+  - 데이터 내의 모든 단어의 개수를 세고 빈도 수로 정렬합니다.
+  ### 4.2. 단어벡터화
+  ```python
+  train_x = tokenizer.texts_to_sequences(train_list)
+  test_x = tokenizer.texts_to_sequences(test_list)
+  train_y = np.array(train_df['label'])
+  test_y = np.array(test_df['label'])
+  ```
+  ```python
+  print(train_list[2])
+  print(train_x[2])
   
-
+  >>>[['포스터', '보고', '초딩', '영화', '오버', '연기', '조차', '가볍', '구나']]
+     [[294, 304, 411, 1, 1126, 10, 575, 636, 206]]
+  ```
+  
