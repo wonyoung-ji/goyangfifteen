@@ -64,7 +64,7 @@
     + 기관: University of Nevada, Reno
     + 기간: 2018. 07 ~ 2018. 12
     + 내용: Native American Culture, ESL-Oral Presentation, Introduction to Langauge, First Year Japanese 수강 \ 
-            Musical Therapy Club에 참여하여 매주 주말마다 daycare center에서 음악봉사
+    Musical Therapy Club에 참여하여 매주 주말마다 daycare center에서 음악봉사
   - 여행
     + 일본
     + 태국
