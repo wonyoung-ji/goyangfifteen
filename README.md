@@ -102,4 +102,7 @@
 - [최종PDF](https://github.com/wonyoung-ji/project/blob/master/Goyang_Public_Bicycle/Final/(%EC%B5%9C%EC%A2%85)%20%ED%94%BC%ED%94%84%ED%8B%B4%EC%9D%84%ED%83%84%EB%AC%B8%EB%8F%8C%EC%9D%B4.pdf)
 
 ## 사이드프로젝트
-### 1.
+### 1. 네이버 영화평 감정분석
+- 사용툴: Python
+- 내용: 네이버 영화평 train셋을 가져와 학습시킨 후, test셋 및 새로운 영화평 등록시 감정분류
+- 결과: Acurracy 80%
