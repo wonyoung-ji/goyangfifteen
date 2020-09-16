@@ -1,1 +1,0 @@
-goyang_public_bicycle_data.zip filter=lfs diff=lfs merge=lfs -text
