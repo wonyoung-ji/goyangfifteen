@@ -130,4 +130,12 @@ def postagging_mecab(text):
   >>> 리뷰 최대 길이: 65
       리뷰 평균 길이: 7.403553451783402
   ```
-  
+  ![image](https://user-images.githubusercontent.com/69240962/93350902-0f9c0780-f874-11ea-92e7-48096a1c64f5.png)
+  - 대부분의 리뷰는 30개 이하로 이루어져 있습니다.
+  - 패딩 길이를 30으로 정합니다.
+  ```python
+  max_len = 30
+  train_x = pad_sequences(train_x, maxlen = max_len)
+  test_x = pad_sequences(test_x, maxlen = max_len)
+  ```
+
