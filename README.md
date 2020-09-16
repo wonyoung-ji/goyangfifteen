@@ -93,16 +93,17 @@
 ## 공모전
 ### 1. 고양시 공공자전거 스테이션 최적 위치 선정 
 - 폴더명: Goyang_Public_Bicycle
+- 기간: 2020. 08. 20 ~ 2020. 09. 10
 - 팀명: 피프틴을탄문돌이 (5명)
 - 주최기간: [compas](https://compas.lh.or.kr/) 
 - 사용툴: Python, QGIS
-- 기간: 2020. 08. 20 ~ 2020. 09. 10
 - 내용: 도시화, 인구증가 등으로 인해 고양시 공공자전거 '피프틴'을 재배치하기 위한 프로젝트
 - 결과: 진행 중에 있음
 - [최종PDF](https://github.com/wonyoung-ji/project/blob/master/Goyang_Public_Bicycle/Final/(%EC%B5%9C%EC%A2%85)%20%ED%94%BC%ED%94%84%ED%8B%B4%EC%9D%84%ED%83%84%EB%AC%B8%EB%8F%8C%EC%9D%B4.pdf)
 
 ## 사이드프로젝트
 ### 1. 네이버 영화평 감정분석
+- 기간: 2020.09.10. ~ 2020.09.11.
 - 사용툴: Python
 - 내용: 네이버 영화평 train셋을 가져와 학습시킨 후, test셋 및 새로운 영화평 등록시 감정분류
 - 결과: Acurracy 80%
