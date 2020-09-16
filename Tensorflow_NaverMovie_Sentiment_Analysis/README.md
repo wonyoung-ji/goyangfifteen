@@ -21,6 +21,7 @@ import pandas as pd
 import tensorflow as tf
 import numpy as np
 ```
+Colab에 한글 형태소 분석기 KoNLPy를 설치합니다.
 ```python
 ! sudo apt-get install g++ openjdk-7-jdk #Install Java 1.7+ 
 #!sudo apt-get install python-dev; pip install konlpy # Python 2.x 
