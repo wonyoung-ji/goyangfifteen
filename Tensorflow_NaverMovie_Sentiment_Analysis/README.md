@@ -21,7 +21,6 @@ import pandas as pd
 import tensorflow as tf
 import numpy as np
 ```
-Colab에 한글 형태소 분석기 KoNLPy를 설치합니다.
 ```python
 ! sudo apt-get install g++ openjdk-7-jdk #Install Java 1.7+ 
 #!sudo apt-get install python-dev; pip install konlpy # Python 2.x 
@@ -33,3 +32,29 @@ Colab에 한글 형태소 분석기 KoNLPy를 설치합니다.
 from konlpy.tag import Mecab
 mecab = Mecab()
 ```
+- Colab에 한글 형태소 분석기 KoNLPy를 설치합니다.
+
+## 2. 데이터 불러오기
+```python
+from google.colab import drive
+drive.mount('/content/gdrive')
+```
+- train셋과 test셋을 다운받고 구글 드라이브에 올려줍니다.
+- Colab에 구글 드라이브를 마운트합니다.
+```python
+train = pd.DataFrame(pd.read_csv('/content/gdrive/My Drive/NLP/네이버영화리뷰실습/ratings_train.txt', sep='\t', quoting=3,encoding='utf-8')) 
+train.dropna(inplace=True)
+train.reset_index(inplace=True)
+```
+```python
+test = pd.DataFrame(pd.read_csv('/content/gdrive/My Drive/NLP/네이버영화리뷰실습/ratings_test.txt', sep='\t', quoting=3,encoding='utf-8')) 
+test.dropna(inplace=True)
+test.reset_index(inplace=True)
+```
+- txt 파일을 csv로 읽어 옵니다.
+- 결측치는 행 제거한 후, 인덱스를 재정렬합니다.
+```python
+print('train :',len(train))
+print('test :', len(test))
+```
+- train셋은 149995개, test셋은 49997개의 리뷰가 존재합니다. (결측치 처리 이후의 
