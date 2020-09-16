@@ -83,8 +83,8 @@ def postagging_mecab(text):
   ```
   ```python
   def make_tokens(df):
-  df['tokens']=''
-  tokens_list = []
+    df['tokens']=''
+    tokens_list = []
   for i, row in df.iterrows():
     token = postagging_mecab(df['document'][i])
     tokens_list.append(token)
