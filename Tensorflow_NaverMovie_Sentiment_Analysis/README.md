@@ -170,5 +170,46 @@ Epoch 4/5
 Epoch 5/5
 2000/2000 [==============================] - 270s 135ms/step - loss: 0.1702 - accuracy: 0.9249 - val_loss: 0.5978 - val_accuracy: 0.8045
 ```
-  
+- 테스트 데이터에서 정확도 80%를 받았습니다.
+### 4.3. 테스트셋 검증하기
+```python
+model.evaluate(test_x, test_y)[1]
+```
+```python
+1563/1563 [==============================] - 17s 11ms/step - loss: 0.6022 - accuracy: 0.8081
+0.8081485033035278
+```
+- 테스트셋에서도 80%의 정확도를 보여줍니다.
+## 5. 리뷰 감정 예측하기
+```python
+def predict_pos_text(text):
+    token=[]
+    tokens = postagging_mecab(text) 
+    token.append(tokens)
+    print(token,'\n')
+    train_x = tokenizer.texts_to_sequences(token)
+    max_len=30
+    train_x = pad_sequences(train_x, maxlen = max_len)
+    score = float(model.predict(train_x)[0][1])
+    #print('score:', type(score))
+    if score>0.5:
+        print("[{}]는 {:.2f}% 확률로 긍정 리뷰입니다.\n".format(text, score * 100))
+    else:
+        print("[{}]는 {:.2f}% 확률로 부정 리뷰입니다.\n".format(text, (1 - score) * 100))
+```
+- text를 입력받아 감정을 분류하는 함수를 정의합니다.
+```python
+predict_pos_text('아 진짜 개개개개개 재미없네')
+>>>[['진짜', '개개', '개개', '재미없']] 
+   [아 진짜 개개개개개 재미없네]는 99.99% 확률로 부정 리뷰입니다.
+```
+```python
+predict_pos_text('너무 잘 생겼고, 또 보고 싶어요')
+>>> [['너무', '생겼', '어요']] 
+    [너무 잘 생겼고, 또 보고 싶어요]는 89.50% 확률로 긍정 리뷰입니다.
+```
+
+
+
+
 
