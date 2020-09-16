@@ -97,14 +97,13 @@ def postagging_mecab(text):
   train_list, train_df = make_tokens(train)
   test_list, test_df = make_tokens(test)
   ```
-  ## 4. DL
-  ### 4.1. 단어인덱스 생성
+  ### 3.3. 단어인덱스 생성
   ```python
   tokenizer = Tokenizer()      
   tokenizer.fit_on_texts(train_list)    
   ```
-  - 데이터 내의 모든 단어의 개수를 세고 빈도 수로 정렬합니다.
-  ### 4.2. 단어벡터화
+  -  단어 집합이 생성되고, 각 단어에 고유한 정수(인덱스)가 부여됩니다.
+  ### 3.4. 단어벡터화
   ```python
   train_x = tokenizer.texts_to_sequences(train_list)
   test_x = tokenizer.texts_to_sequences(test_list)
@@ -118,7 +117,7 @@ def postagging_mecab(text):
   >>>[['포스터', '보고', '초딩', '영화', '오버', '연기', '조차', '가볍', '구나']]
      [[294, 304, 411, 1, 1126, 10, 575, 636, 206]]
   ```
-  ### 4.3. 패딩
+  ### 3.5. 패딩
   - 패딩을 하기 전 리뷰의 길이를 알아봅니다.
   ```python
   print('리뷰 최대 길이:', max(len(i) for i in train_x))
@@ -138,4 +137,38 @@ def postagging_mecab(text):
   train_x = pad_sequences(train_x, maxlen = max_len)
   test_x = pad_sequences(test_x, maxlen = max_len)
   ```
+  - train셋과 test셋을 패딩합니다.
+  ## 4. LSTM 사용하여 감정분류
+  ### 4.1. 모델생성
+  ```python
+  vocab_size = len(train_x)
+  model = tf.keras.Sequential([
+                             tf.keras.layers.Embedding(vocab_size,100),
+                             tf.keras.layers.LSTM(128),
+                             tf.keras.layers.Dense(128, activation='relu'),
+                             tf.keras.layers.Dense(2, activation='softmax')
+                             ])
+  model.compile(optimizer='adam', loss='sparse_categorical_crossentropy',metrics=['accuracy'])
+```
+- 임베딩하여 밀집벡터로 만듭니다. 
+- 손실함수인 sparse_categorical_crossentropy는 다중 분류 손실함수이며 샘플 값은 원핫인코딩 값이 아닌 정수형 자료입니다.
+- 모델을 기계가 이해할 수 있도록 컴파일합니다.
+### 4.2. 모형학습
+```python
+history = model.fit(train_x, train_y, epochs=5, batch_size=60, validation_split=0.2)
+```
+- 에포크는 5로 정하고, 훈련 데이터 중 20%를 검증 데이터로 사용하여 정확도를 확인합니다.
+```python
+Epoch 1/5
+2000/2000 [==============================] - 271s 135ms/step - loss: 0.4230 - accuracy: 0.7963 - val_loss: 0.3853 - val_accuracy: 0.8204
+Epoch 2/5
+2000/2000 [==============================] - 272s 136ms/step - loss: 0.3209 - accuracy: 0.8560 - val_loss: 0.4045 - val_accuracy: 0.8152
+Epoch 3/5
+2000/2000 [==============================] - 271s 135ms/step - loss: 0.2586 - accuracy: 0.8841 - val_loss: 0.4238 - val_accuracy: 0.8146
+Epoch 4/5
+2000/2000 [==============================] - 271s 135ms/step - loss: 0.2088 - accuracy: 0.9077 - val_loss: 0.4897 - val_accuracy: 0.8053
+Epoch 5/5
+2000/2000 [==============================] - 270s 135ms/step - loss: 0.1702 - accuracy: 0.9249 - val_loss: 0.5978 - val_accuracy: 0.8045
+```
+  
 
