@@ -92,7 +92,7 @@
 
 ## 공모전
 ### 1. 고양시 공공자전거 스테이션 최적 위치 선정 
-- 폴더명: Goyang_Public_Bicycle
+- 폴더명: [Goyang_Public_Bicycle](https://github.com/wonyoung-ji/project/tree/master/Goyang_Public_Bicycle)
 - 기간: 2020. 08. 20 ~ 2020. 09. 10
 - 팀명: 피프틴을탄문돌이 (5명)
 - 주최기간: [compas](https://compas.lh.or.kr/) 
