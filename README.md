@@ -22,7 +22,7 @@
     + 기간: 2019.06
     + 기관: 롯데월드
     + 내용: 온라인 플랫폼 마다 다른 티켓 발권 방식의 복잡성 및 불편함 제시. \
-    더불어 QR코드로 발권될 것을 제안. 약 한 달후 QR코드로 티켓 발권이 일제히 이루어짐.
+            더불어 QR코드로 발권될 것을 제안. 약 한 달후 QR코드로 티켓 발권이 일제히 이루어짐.
   - 선일여자고등학교 자원봉사
     + 기간: 2019.09 ~ 2019.12
     + 기관: 선일여자고등학교
@@ -63,7 +63,7 @@
   - 교환학생
     + 기관: University of Nevada, Reno
     + 기간: 2018. 07 ~ 2018. 12
-    + 내용: Native American Culture, ESL-Oral Presentation, Introduction to Langauge, First Year Japanese 수강
+    + 내용: Native American Culture, ESL-Oral Presentation, Introduction to Langauge, First Year Japanese 수강 \ 
             Musical Therapy Club에 참여하여 매주 주말마다 daycare center에서 음악봉사
   - 여행
     + 일본
