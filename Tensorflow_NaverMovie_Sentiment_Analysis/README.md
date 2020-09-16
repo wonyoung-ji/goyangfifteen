@@ -118,4 +118,16 @@ def postagging_mecab(text):
   >>>[['포스터', '보고', '초딩', '영화', '오버', '연기', '조차', '가볍', '구나']]
      [[294, 304, 411, 1, 1126, 10, 575, 636, 206]]
   ```
+  ### 4.3. 패딩
+  - 패딩을 하기 전 리뷰의 길이를 알아봅니다.
+  ```python
+  print('리뷰 최대 길이:', max(len(i) for i in train_x))
+  print('리뷰 평균 길이:', sum((len(i))/len(train_x) for i in train_x))
+  plt.hist([len(i) for i in train_x])
+  plt.xlabel('length')
+  plt.ylabel('quantity')
+  
+  >>> 리뷰 최대 길이: 65
+      리뷰 평균 길이: 7.403553451783402
+  ```
   
