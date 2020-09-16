@@ -5,7 +5,7 @@
 - 인원 : 1명
 - 작업툴 : Python, Tensorflow, Numpy, matplotlib, colab등
 # 데이터
-- [데이터](https://github.com/e9t/nsmc/)에서 ratings_test.txt와 ratings_train.txt을 다운받습니다.
+- [해당 깃허브](https://github.com/e9t/nsmc/)에서 ratings_test.txt와 ratings_train.txt을 다운받습니다.
 # 참고자료
 - [딥러닝을 이용한 자연어 처리 입문](https://wikidocs.net/book/2155)
 # 프로그래밍
