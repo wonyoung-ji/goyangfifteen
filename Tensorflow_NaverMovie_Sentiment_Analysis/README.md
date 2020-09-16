@@ -57,4 +57,45 @@ test.reset_index(inplace=True)
 print('train :',len(train))
 print('test :', len(test))
 ```
-- train셋은 149995개, test셋은 49997개의 리뷰가 존재합니다. (결측치 처리 이후의 
+- train셋은 149995개, test셋은 49997개의 리뷰가 존재합니다. (결측치 처리 이후의 값)
+## 3. 데이터 전처리
+### 3.1. 데이터 정제
+```python
+import re       # 정규표현식
+remove_except_ko = re.compile(r'[^가-힣ㄱ-ㅎㅏ-ㅣ|\\s]')
+
+def preprocess(text):
+  text = re.sub(remove_except_ko,' ',text).strip()  # sub = replace
+  return text
+
+train['document'] = train['document'].map(lambda x : preprocess(x))
+test['document'] = test['document'].map( lambda x : preprocess(x))
+```
+- 정규표현식을 사용하여 한글 이외의 글자들은 제외합니다.
+### 3.2. 토큰화 및 불용어처리
+```python
+stop_word = ['께서','에서','이다','에게','으로','이랑','까지','부터','하다']
+def postagging_mecab(text):
+  text = mecab.morphs(text)
+  text = [ i for i in text if len(i)>1]
+  text = [ i for i in text if i not in stop_word]
+  return text
+  ```
+  ```python
+  def make_tokens(df):
+  df['tokens']=''
+  tokens_list = []
+  for i, row in df.iterrows():
+    token = postagging_mecab(df['document'][i])
+    tokens_list.append(token)
+    df['tokens'][i] = token
+  return tokens_list, df
+  ```
+  - mecab을 사용하여 해당 영화평의 형태소만 가져옵니다.
+  - for문을 사용하여 형태소만 담겨있는 list와 모두 합쳐진 데이터프레임을 출력하는 함수를 정의합니다.
+  ```python
+  train_list, train_df = make_tokens(train)
+  test_list, test_df = make_tokens(test)
+  ```
+  
+
