@@ -101,6 +101,9 @@
 - 결과: 진행 중에 있음
 - [최종PDF](https://github.com/wonyoung-ji/project/blob/master/Goyang_Public_Bicycle/Final/(%EC%B5%9C%EC%A2%85)%20%ED%94%BC%ED%94%84%ED%8B%B4%EC%9D%84%ED%83%84%EB%AC%B8%EB%8F%8C%EC%9D%B4.pdf)
 
+### 2. KDX 소비 트렌드 분석 및 시각화 경진대회
+
+
 ## 사이드프로젝트
 ### 1. 네이버 영화평 감정분석
 - 기간: 2020.09.07. ~ 2020.09.08.
