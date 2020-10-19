@@ -108,7 +108,6 @@
 - 사용툴: Colab
 - 내용: `Tensorflow`, `LSTM`을 사용하여 네이버 영화평 train셋을 학습하는 모형을 만든 후 새로운 영화평 감정을 예측.
 - 결과: Acurracy 80%
-- [코드](https://github.com/wonyoung-ji/project/tree/master/Tensorflow_NaverMovie_Sentiment_Analysis)
 
 ### 3.코로나 이후 소비트렌드 분석
 - 폴더명: [Post-Corona Consumption Trend Insights Analysis Based on Big Data](https://github.com/wonyoung-ji/project/tree/master/Post-Corona%20Consumption%20Trend%20Insights%20Analysis%20Based%20on%20Big%20Data)
