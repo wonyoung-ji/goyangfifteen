@@ -110,7 +110,7 @@
 - [코드](https://github.com/wonyoung-ji/project/tree/master/Tensorflow_NaverMovie_Sentiment_Analysis)
 
 ### 3.코로나 이후 소비트렌드 분석
-- 폴더명: [Post-Corona Consumption Trend Insights Analysis Based on Big Data]
+- 폴더명: [Post-Corona Consumption Trend Insights Analysis Based on Big Data](https://github.com/wonyoung-ji/project/tree/master/Post-Corona%20Consumption%20Trend%20Insights%20Analysis%20Based%20on%20Big%20Data)
 - 기간: 2020. 09. 28 ~ 2020. 10. 16
 - 팀명: CHAOS (5명)
 - 사용언어: Python
