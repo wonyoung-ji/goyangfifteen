@@ -96,18 +96,24 @@
 - 기간: 2020. 08. 20 ~ 2020. 09. 10
 - 팀명: 피프틴을탄문돌이 (5명)
 - 주최기간: [compas](https://compas.lh.or.kr/) 
-- 사용툴: Python, QGIS
+- 사용언어: Python
+- 사용툴: Colab, QGIS
 - 내용: 도시화, 인구증가 등으로 인해 고양시 공공자전거 '피프틴'을 재배치하기 위한 프로젝트
-- 결과: 진행 중에 있음
+- 결과: 입상
 - [최종PDF](https://github.com/wonyoung-ji/project/blob/master/Goyang_Public_Bicycle/Final/(%EC%B5%9C%EC%A2%85)%20%ED%94%BC%ED%94%84%ED%8B%B4%EC%9D%84%ED%83%84%EB%AC%B8%EB%8F%8C%EC%9D%B4.pdf)
 
-### 2. KDX 소비 트렌드 분석 및 시각화 경진대회
-
-
-## 사이드프로젝트
-### 1. 네이버 영화평 감정분석
+### 2. 네이버 영화평 감정분석
 - 기간: 2020.09.07. ~ 2020.09.08.
 - 사용툴: Python
 - 내용: Tensorflow, LSTM을 사용하여 네이버 영화평 train셋을 학습하는 모형을 만든 후 새로운 영화평 감정을 예측.
 - 결과: Acurracy 80%
 - [코드](https://github.com/wonyoung-ji/project/tree/master/Tensorflow_NaverMovie_Sentiment_Analysis)
+
+### 3.코로나 이후 소비트렌드 분석
+- 폴더명: 
+- 기간: 2020. 09. 28 ~ 2020. 10. 16
+- 팀명: CHAOS (5명)
+- 사용언어: Python
+- 작업툴 : Colab, Power BI
+- 사용 라이브러리 : pandas, numpy, scipy, matplotlib, seaborn 등
+- 내용: 코로나로 인한 경기 구조 변화가 이루어짐에 따라 소비자들의 행동 패턴을 분석
