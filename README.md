@@ -105,7 +105,7 @@
 ### 2. 네이버 영화평 감정분석
 - 기간: 2020.09.07. ~ 2020.09.08.
 - 사용툴: Python
-- 내용: Tensorflow, LSTM을 사용하여 네이버 영화평 train셋을 학습하는 모형을 만든 후 새로운 영화평 감정을 예측.
+- 내용: `Tensorflow`, `LSTM`을 사용하여 네이버 영화평 train셋을 학습하는 모형을 만든 후 새로운 영화평 감정을 예측.
 - 결과: Acurracy 80%
 - [코드](https://github.com/wonyoung-ji/project/tree/master/Tensorflow_NaverMovie_Sentiment_Analysis)
 
@@ -115,5 +115,5 @@
 - 팀명: CHAOS (5명)
 - 사용언어: Python
 - 작업툴 : Colab, Power BI
-- 사용 라이브러리 : pandas, numpy, scipy, matplotlib, seaborn 등
+- 사용 라이브러리 : `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn` 등
 - 내용: 코로나로 인한 경기 구조 변화가 이루어짐에 따라 소비자들의 행동 패턴을 분석
