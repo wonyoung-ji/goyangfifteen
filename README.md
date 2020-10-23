@@ -115,7 +115,9 @@
 - 폴더명: [Post-Corona Consumption Trend Insights Analysis Based on Big Data](https://github.com/wonyoung-ji/project/tree/master/Post-Corona%20Consumption%20Trend%20Insights%20Analysis%20Based%20on%20Big%20Data)
 - 기간: 2020. 09. 28 ~ 2020. 10. 16
 - 팀명: CHAOS (5명)
+- 주최기간: 
 - 사용언어: Python
 - 작업툴 : Colab, Power BI
 - 라이브러리 : `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn` 등
 - 내용: 코로나로 인한 경기 구조에 따라 소비자들의 행동 패턴을 분석
+- 결과: 최우수상 수상
