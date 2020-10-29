@@ -90,7 +90,7 @@
     + 대만
     + 미국
 
-## 공모전
+## 프로젝트
 ### 1. 고양시 공공자전거 스테이션 최적 위치 선정 
 - 폴더명: [Goyang_Public_Bicycle](https://github.com/wonyoung-ji/project/tree/master/Goyang_Public_Bicycle)
 - 기간: 2020. 08. 20 ~ 2020. 09. 10
@@ -102,7 +102,7 @@
 - 결과: 입상
 - [최종PDF](https://github.com/wonyoung-ji/project/blob/master/Goyang_Public_Bicycle/Final/(%EC%B5%9C%EC%A2%85)%20%ED%94%BC%ED%94%84%ED%8B%B4%EC%9D%84%ED%83%84%EB%AC%B8%EB%8F%8C%EC%9D%B4.pdf)
 
-### 2. 네이버 영화평 감정분석
+### 2. 네이버 영화평 감정분석 (사이드 프로젝트)
 - 폴더명: [Tensorflow_NaverMovie_Sentiment_Analysis](https://github.com/wonyoung-ji/project/tree/master/Tensorflow_NaverMovie_Sentiment_Analysis)
 - 기간: 2020.09.07. ~ 2020.09.08.
 - 사용언어: Python
