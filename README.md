@@ -120,4 +120,4 @@
 - 작업툴 : Colab, Power BI
 - 라이브러리 : `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn` 등
 - 내용: 코로나로 인한 변화한 소비자들의 행동 패턴을 분석.
-- 결과: 결과진행중
+- 결과: 장려상(4등)
