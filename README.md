@@ -120,6 +120,6 @@
 - 사용언어: Python
 - 작업툴 : Colab, Power BI
 - 라이브러리 : `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn` 등
-- 내용: 코로나로 인해 변화한 소비자들의 행동 패턴 분석
+- 내용: 코로나로 인해 변화한 소비자들의 행동 패턴 분석 및 해당 키워드 제시
 - 결과: 장려상(4등)
 - [최종PDF](https://github.com/wonyoung-ji/project/blob/master/Post-Corona%20Consumption%20Trend%20Insights%20Analysis%20Based%20on%20Big%20Data/KDX_Post-Corona%20Consumption%20Trend%20Insights.pdf)
